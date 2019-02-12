@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Destination Display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">  
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>  
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="headMast">
+                <h1 id="currentTime">
+                </h1>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="text-center">
+                                "Run my trains on time, for one thing!"</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-dark" id="trainTable">
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency(min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>                
+                <td><span id="trainName1"></span></td>
+                <td><span id="dest1"></span></td>
+                <td><span id="Freq1"></span></td>
+                <td><span id="nexAriv1"></span></td>
+                <td><span id="minsAway1"></span></td>    
+            </tr>     -->
+            </tbody>
+        </table>
+
+        <div style="background: transparent;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 id="thomas">"Rubbish! You're too slow! You need exercise."</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="trainNameIn">Train Name</label>
+                                    <input class="form-control" id="trainNameIn" type="text" required>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="destIn">Destination</label>
+                                    <input class="form-control" id="destIn" type="text" placeholder="Minneapolis, MN"
+                                        required>
+                                </div>
+                            </form>
+                            <form class="form-inline">
+                                <label for="firstTrainInput">First Train Time</label>
+                                <input type="time" class="form-control mx-sm-3 mb-2" name="trTime" id="first-TrainIn"
+                                    required>
+                                <label>Frequency (min)</label>
+                                <input type="number" class="form-control mx-sm-3 mb-2" name="trFrequency" id="freqIn"
+                                    placeholder="10">
+                                <button id="addTrain" type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="imageTrain">
+                <img src="assets\images\download.jpg">
+            </div>
+        </footer>
+        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+        <script src="assets/javascript/main.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+
+    </div>
+</body>
+</html>
